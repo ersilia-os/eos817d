@@ -1,6 +1,6 @@
 Identifier: eos817d
 Slug: hyper-dimensional-fingerprints
-Status: In progress
+Status: Ready
 Title: Hyper-Dimensional Fingerprints
 Description: HDF is a training-free molecular representation based on 
   hyperdimensional computing and iterative message passing. It encodes atom 
@@ -37,6 +37,18 @@ Source Code: https://doi.org/10.5281/zenodo.19373621
 License: MIT
 Contributor: arnaucoma24
 Incorporation Date: '2026-05-20'
+Last Packaging Date: '2026-05-20'
+Release: v1.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos817d.zip
+DockerHub: https://hub.docker.com/r/ersiliaos/eos817d
+Docker Architecture:
+  - AMD64
+  - ARM64
 Model Size: 1.0
 Environment Size: 826.0
+Image Size: 955.51
+Computational Performance 1: 35.46
+Computational Performance 2: 18.25
+Computational Performance 3: 23.36
+Computational Performance 4: 20.68
+Computational Performance 5: 36.51
