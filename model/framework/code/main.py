@@ -1,37 +1,39 @@
-# imports
 import os
-import csv
 import sys
 import numpy as np
-from rdkit import Chem
-from rdkit.Chem.Descriptors import MolWt
 from ersilia_pack_utils.core import read_smiles, write_out
 
-# parse arguments
 input_file = sys.argv[1]
 output_file = sys.argv[2]
 
-# current file directory
 root = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, root)
 
-# my model
+from hyper_fingerprints import Encoder
+
+DIMENSION = 32
+SEED = 42
+
+
 def my_model(smiles_list):
-    return [MolWt(Chem.MolFromSmiles(smi)) for smi in smiles_list]
+    enc = Encoder(dimension=DIMENSION, seed=SEED, backend="numpy")
+    outputs = []
+    for smi in smiles_list:
+        try:
+            fp = enc.encode(smi)
+            outputs.append(fp[0])
+        except Exception:
+            outputs.append(np.full(DIMENSION, np.nan))
+    return np.array(outputs, dtype=np.float32)
 
 
-# read SMILES from .csv file, assuming one column with header
 _, smiles_list = read_smiles(input_file)
 
-# run model
 outputs = my_model(smiles_list)
 
-#check input and output have the same lenght
-input_len = len(smiles_list)
-output_len = len(outputs)
-assert input_len == output_len
+assert len(smiles_list) == len(outputs)
 
-num_dims = outputs.shape[1]
-header = [f"feat_{str(i).zfill(3)}" for i in range(num_dims)]
+pad = len(str(DIMENSION - 1))
+header = [f"feat_{str(i).zfill(pad)}" for i in range(DIMENSION)]
 
-# write output in a .csv file
 write_out(outputs, header, output_file, np.float32)
