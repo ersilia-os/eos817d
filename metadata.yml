@@ -1,33 +1,37 @@
-Identifier: eos0aaa
-Slug: template-model
+Identifier: eos817d
+Slug: hyper-dimensional-fingerprints
 Status: In progress
-Title: This is a template model
-Description: |
-  This is a description of the template model.
-  You can use multiple lines in this description.
+Title: Hyper-Dimensional Fingerprints
+Description: HDF is a training-free molecular representation based on 
+  hyperdimensional computing and iterative message passing. It encodes atom 
+  features into high-dimensional vectors and captures molecular connectivity 
+  through algebraic operations, producing deterministic fixed-length 
+  fingerprints. It retains graph information better than Morgan fingerprints at 
+  low dimensions, improves property prediction across benchmarks, and enhances 
+  sample efficiency in Bayesian molecular optimization.
 Deployment:
   - Local
   - Online
 Source: Local, Online
 Source Type: Internal, Replicated, External
 Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization, Projection, Similarity search, Generation
-Input: 
+Subtask: Property calculation or prediction, Activity prediction, Featurization,
+  Projection, Similarity search, Generation
+Input:
   - Compound
 Input Dimension: 1
-Output: 
+Output:
   - Value
   - Score
   - Compound
   - Text
 Output Dimension: 1
 Output Consistency: Fixed, Variable
-Interpretation: |
-  The output of this template model should be interpreted like this.
+Interpretation: The output of this template model should be interpreted like 
+  this.
 Tag:
-  - Tag 1
-  - Tag 2
-  - Tag 3
+  - Embedding
+  - Descriptor
 Biomedical Area:
   - Biomedical Area 1
   - Biomedical Area 2
@@ -36,6 +40,7 @@ Target Organism:
   - Target Organism 2
 Publication Type: Peer reviewed, Preprint, Other
 Publication Year: 2025
-Publication: https://example.com
-Source Code: https://example.com
-License: GPL-3.0-or-later, MIT, Apache-2.0...
+Publication: https://arxiv.org/abs/2604.27810
+Source Code: https://doi.org/10.5281/zenodo.19373621
+License: MIT
+Contributor: arnaucoma24
