@@ -11,35 +11,27 @@ Description: HDF is a training-free molecular representation based on
   sample efficiency in Bayesian molecular optimization.
 Deployment:
   - Local
-  - Online
-Source: Local, Online
-Source Type: Internal, Replicated, External
-Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization,
-  Projection, Similarity search, Generation
+Source: Local
+Source Type: External
+Task: Representation
+Subtask: Featurization
 Input:
   - Compound
 Input Dimension: 1
 Output:
   - Value
-  - Score
-  - Compound
-  - Text
-Output Dimension: 1
-Output Consistency: Fixed, Variable
-Interpretation: The output of this template model should be interpreted like 
-  this.
+Output Dimension: 32
+Output Consistency: Fixed
+Interpretation: Vector representation of a molecule.
 Tag:
   - Embedding
   - Descriptor
 Biomedical Area:
-  - Biomedical Area 1
-  - Biomedical Area 2
+  - Any
 Target Organism:
-  - Target Organism 1
-  - Target Organism 2
-Publication Type: Peer reviewed, Preprint, Other
-Publication Year: 2025
+  - Any
+Publication Type: Preprint
+Publication Year: 2026
 Publication: https://arxiv.org/abs/2604.27810
 Source Code: https://doi.org/10.5281/zenodo.19373621
 License: MIT
