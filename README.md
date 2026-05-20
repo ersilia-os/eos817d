@@ -2,8 +2,7 @@
 
 HDF is a training-free molecular representation based on hyperdimensional computing and iterative message passing. It encodes atom features into high-dimensional vectors and captures molecular connectivity through algebraic operations, producing deterministic fixed-length fingerprints. It retains graph information better than Morgan fingerprints at low dimensions, improves property prediction across benchmarks, and enhances sample efficiency in Bayesian molecular optimization.
 
-This model was incorporated on 2026-05-20.
-
+This model was incorporated on 2026-05-20.Last packaged on 2026-05-20.
 
 ## Information
 ### Identifiers
@@ -44,12 +43,19 @@ _10 of 32 columns are shown_
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `External`
+- **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos817d](https://hub.docker.com/r/ersiliaos/eos817d)
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos817d.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos817d.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `826`
+- **Image Size (Mb):** `955.51`
 
+**Computational Performance (seconds):**
+- 10 inputs: `35.46`
+- 100 inputs: `23.36`
+- 10000 inputs: `36.51`
 
 ### References
 - **Source Code**: [https://doi.org/10.5281/zenodo.19373621](https://doi.org/10.5281/zenodo.19373621)
