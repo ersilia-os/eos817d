@@ -59,7 +59,7 @@ _10 of 32 columns are shown_
 
 ### References
 - **Source Code**: [https://doi.org/10.5281/zenodo.19373621](https://doi.org/10.5281/zenodo.19373621)
-- **Publication**: [https://arxiv.org/abs/2604.27810](https://arxiv.org/abs/2604.27810)
+- **Publication**: [https://doi.org/10.48550/arXiv.2604.27810](https://doi.org/10.48550/arXiv.2604.27810)
 - **Publication Type:** `Preprint`
 - **Publication Year:** `2026`
 - **Ersilia Contributor:** [arnaucoma24](https://github.com/arnaucoma24)
