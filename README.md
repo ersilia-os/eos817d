@@ -1,6 +1,6 @@
 # Hyper-Dimensional Fingerprints
 
-HDF is a training-free molecular representation based on hyperdimensional computing and iterative message passing. It encodes atom features into high-dimensional vectors and captures molecular connectivity through algebraic operations, producing deterministic fixed-length fingerprints. It retains graph information better than Morgan fingerprints at low dimensions, improves property prediction across benchmarks, and enhances sample efficiency in Bayesian molecular optimization.
+Represents a molecule as 32 hyper-dimensional values, drawing on a computing paradigm in which information is encoded across very wide vectors and combined through simple algebraic operations. Teufel and Torresi applied this to molecular structure, binding atom and bond representations into a whole-molecule vector that can then be compressed. The construction is deterministic and cheap, and the resulting fingerprint behaves as a compact alternative to conventional descriptors in downstream models.
 
 This model was incorporated on 2026-05-20.Last packaged on 2026-05-20.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2026-05-20.Last packaged on 2026-05-20.
 ### Output
 - **Output Dimension:** `32`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Vector representation of a molecule.
+- **Interpretation:** 32 hyper-dimensional features encoding molecular structure.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
