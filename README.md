@@ -1,6 +1,6 @@
 # Hyper-Dimensional Fingerprints
 
-Represents a molecule as 32 hyper-dimensional values, drawing on a computing paradigm in which information is encoded across very wide vectors and combined through simple algebraic operations. Teufel and Torresi applied this to molecular structure, binding atom and bond representations into a whole-molecule vector that can then be compressed. The construction is deterministic and cheap, and the resulting fingerprint behaves as a compact alternative to conventional descriptors in downstream models.
+Encodes a molecule as 32 hyperdimensional components with no training at all, mapping atom and bond attributes onto quasi-orthogonal random vectors and combining them by circular convolution through iterative message passing over the molecular graph. Teufel, Torresi and colleagues show that distances in this space track graph edit distance far more closely than Morgan fingerprints of equal width, improving property prediction and Bayesian optimisation at low dimensions. A fixed random seed keeps the encoding reproducible.
 
 This model was incorporated on 2026-05-20.Last packaged on 2026-05-20.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2026-05-20.Last packaged on 2026-05-20.
 ### Output
 - **Output Dimension:** `32`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** 32 hyper-dimensional features encoding molecular structure.
+- **Interpretation:** 32 training-free hyperdimensional components whose pairwise distances approximate graph edit distance between molecules.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
