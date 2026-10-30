@@ -2,13 +2,14 @@ Identifier: eos817d
 Slug: hyper-dimensional-fingerprints
 Status: Ready
 Title: Hyper-Dimensional Fingerprints
-Description: Encodes a molecule as 32 hyperdimensional components with no training
-  at all, mapping atom and bond attributes onto quasi-orthogonal random vectors and
-  combining them by circular convolution through iterative message passing over the
-  molecular graph. Teufel, Torresi and colleagues show that distances in this space
-  track graph edit distance far more closely than Morgan fingerprints of equal width,
-  improving property prediction and Bayesian optimisation at low dimensions. A fixed
-  random seed keeps the encoding reproducible.
+Description: Encodes a molecule as 32 hyperdimensional components with no 
+  training at all, mapping atom and bond attributes onto quasi-orthogonal random
+  vectors and combining them by circular convolution through iterative message 
+  passing over the molecular graph. Teufel, Torresi and colleagues show that 
+  distances in this space track graph edit distance far more closely than Morgan
+  fingerprints of equal width, improving property prediction and Bayesian 
+  optimisation at low dimensions. A fixed random seed keeps the encoding 
+  reproducible.
 Deployment:
   - Local
 Source: Local
@@ -22,8 +23,8 @@ Output:
   - Value
 Output Dimension: 32
 Output Consistency: Fixed
-Interpretation: 32 training-free hyperdimensional components whose pairwise distances
-  approximate graph edit distance between molecules.
+Interpretation: 32 training-free hyperdimensional components whose pairwise 
+  distances approximate graph edit distance between molecules.
 Tag:
   - Embedding
   - Descriptor
@@ -39,7 +40,7 @@ License: MIT
 Contributor: arnaucoma24
 Incorporation Date: '2026-05-20'
 Last Packaging Date: '2026-05-20'
-Release: v1.0.0
+Release: v1.0.1
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos817d.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos817d
 Docker Architecture:
